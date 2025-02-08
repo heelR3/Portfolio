@@ -503,6 +503,7 @@ nav .fa-solid{
     }
     .about{
         padding: 5px;
+        margin-top: 5rem;
     }
     .about-col-1, .about-col-2{
         flex-basis: 100%;
