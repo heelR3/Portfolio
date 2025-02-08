@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Deployment | My Portfolio</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+    <header>
+        <h1>Website Deployment</h1>
+    </header>
+
+    <section class="service-details">
+        <h2>What I Offer</h2>
+        <p>Hosting, deploying, and maintaining websites to ensure smooth performance and security.</p>
+        
+        <h2>Deployment Platforms</h2>
+        <ul>
+            <li>Vercel</li>
+            <li>Netlify</li>
+            <li>Firebase</li>
+            <li>Heroku</li>
+        </ul>
+
+        <h2>Why Choose Me?</h2>
+        <p>I ensure <strong>fast, reliable, and secure</strong> deployments with continuous integration and monitoring.</p>
+
+        <!-- "Get in Touch" Button - Styled Separately -->
+        <div class="contact-btn-container">
+            <button id="show-contact-form" class="btn">Get in Touch</button>
+        </div>
+    </section>
+
+    <!-- Contact Form (Hidden by Default) -->
+    <section class="contact" id="contact-form">
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <fieldset>
+                    <legend>Get in Touch</legend>                   
+                    <input type="text" name="name" placeholder="Your Name" required>                    
+                    <input type="email" name="email" placeholder="Your Email" required>                   
+                    <textarea name="message" rows="3" placeholder="Your Message" required></textarea>                    
+                    <button type="submit" class="btn2">Submit</button>
+                </fieldset>
+            </form>
+            <span id="msg"></span>                   
+        </div>
+    </section>
+
+    <!-- JavaScript for Button Click Functionality -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const showContactBtn = document.getElementById("show-contact-form");
+            const contactForm = document.getElementById("contact-form");
+
+            if (showContactBtn && contactForm) {
+                showContactBtn.addEventListener("click", function() {
+                    contactForm.style.display = "block";
+                    showContactBtn.style.display = "none";
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
