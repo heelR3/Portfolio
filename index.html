@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudraraj Pandey</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b23bee81b2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+        <div class="header" id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo" alt="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()" aria-hidden="true"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()" aria-hidden="true"></i>
+                </nav>
+    
+                <div class="header-text-container">
+                    <div class="header-text-container-left">
+                        &lt;
+                    </div>
+                    <div class="header-text">                
+                        <h1>Hi, I'm <span>Rudraraj</span></h1>
+                        <h1>Web Developer</h1>
+                    </div>
+                    <div class="header-text-container-right">
+                        &gt;
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
+        <!-- About -->
+        <div class="about" id="about">
+            <div class="container">
+    
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/about.jpg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Full-Stack MERN Developer | Problem Solver | Tech Enthusiast. Passionate about building scalable, responsive web applications and working on innovative tech solutions.</p>
+    
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                        </div>
+    
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Full-Stack Web Development</span><br><strong>Tech Stack:</strong>  MERN (MongoDB, Express.js, React.js, Node.js)<br><strong>Languages:</strong> HTML, CSS, JavaScript, C#, PHP, SQL</li>
+                                <li><span>Problem Solving &amp; Algorithms</span><br><strong>Languages:</strong> C/C++, Java<br><strong>Focus:</strong> Optimizing performance using Data Structures &amp; Algorithms</li>
+                                <li><span>Version Control &amp; CI/CD</span><br><strong>Tools:</strong> Git, GitHub, Vercel, TeXstudio<br> For managing code and deploying applications</li>
+                            </ul>
+                        </div>
+    
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Jun 2024 - Aug 2024</span><br><strong>IoT Intern</strong> at Bharat ACT</li>
+                                <li><span>Sept 2023 - Nov 2023</span><br><strong>Subject Matter Expert</strong> at Chegg India</li>
+                            </ul>
+                        </div>
+    
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2018</span><br><strong>Secondary Education</strong>, Valley View School, Jamshedpur</li>
+                                <li><span>2020</span><br><strong>Higher Secondary Education</strong>, Valley View School, Jamshedpur</li>
+                                <li><span>2021 - Current</span><br><strong>Bachelor of Technology</strong> in <strong>Electronics and Communication Engineering</strong>, Bharati Vidyapeeth University College of Engineering, Pune</li>
+                            </ul>
+                        </div>
+    
+                        <div class="tab-contents" id="achievements">
+                            <ul>
+                                <li><span>Developed Scalable MERN Applications</span><br>Successfully built and deployed responsive full-stack projects with optimized performance.</li>
+                                <li><span>Competitive Programming</span><br>Solved <span class="leetcode" id="leetcode-count">72</span> problems on <strong>LeetCode</strong> </li>
+                            </ul>
+                        </div>
+    
+    
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+        <!-- Services -->
+        <div class="services" id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-crop" aria-hidden="true"></i>
+                        
+                        <h2>UI/UX Design</h2>
+                        <p>Designing intuitive, visually appealing, and user-friendly web experiences with Figma and Adobe XD. </p>
+                        <a href="ui-ux-design.html">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code" aria-hidden="true"></i>
+                        <h2>Web Development</h2>
+                        <p>Building modern, scalable, and fully functional web applications that solve real-world problems using the MERN stack. </p>
+                        <a href="web-development.html">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store" aria-hidden="true"></i>
+                        <h2>Website Deployment</h2>
+                        <p>Hosting, deploying, and maintaining websites to ensure smooth performance and security.</p>
+                        <a href="website-deployment.html">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Portfolio -->
+        <div class="portfolio" id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png" alt="">
+                        <div class="layer">
+                            <h3>Personal Portfolio</h3>
+                            <p>A fully responsive personal portfolio showcasing my skills and projects.</p>
+                            <a href="https://github.com/heelR3/"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-1.png" alt="">
+                        <div class="layer">
+                            <h3>Personal Portfolio</h3>
+                            <p>A fully responsive personal portfolio showcasing my skills and projects.</p>
+                            <a href="https://github.com/heelR3/"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-1.png" alt="">
+                        <div class="layer">
+                            <h3>Personal Portfolio</h3>
+                            <p>A fully responsive personal portfolio showcasing my skills and projects.</p>
+                            <a href="https://github.com/heelR3/"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Extra work -->
+                <div class="work-list extra-works" style="display: none;">
+                    <div class="work">
+                        <img src="images/work-1.png" alt="">
+                        <div class="layer">
+                            <h3>Personal Portfolio</h3>
+                            <p>A fully responsive personal portfolio showcasing my skills and projects.</p>
+                            <a href="https://github.com/heelR3/"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-1.png" alt="">
+                        <div class="layer">
+                            <h3>Personal Portfolio</h3>
+                            <p>A fully responsive personal portfolio showcasing my skills and projects.</p>
+                            <a href="https://github.com/heelR3/"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-1.png" alt="">
+                        <div class="layer">
+                            <h3>Personal Portfolio</h3>
+                            <p>A fully responsive personal portfolio showcasing my skills and projects.</p>
+                            <a href="https://github.com/heelR3/"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a id="see-more-btn" class="btn">See More</a>
+            <a id="show-less-btn" class="btn" style="display: none;">Show Less</a>
+            </div>
+        </div>
+    
+        <!-- Contact -->
+        <div class="contact" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> rudraraj62000@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone" aria-hidden="true"></i> +91 9097467147</p>
+                        <div class="social-icons">
+                            <a href="https://leetcode.com/u/heel_r3/"><img src="images/leetcode.png" alt="problemCount"></a>
+                            <a href="https://github.com/heelR3"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/rudraraj-pandey-b22704285"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/heel_r3/"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                        <a href="images/Resume.pdf" download="" class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <fieldset>
+                            <legend>Get in Touch</legend>                   
+                            <!-- <label for="name">Your Name</label> -->
+                            <input type="text" id="name" name="name" placeholder="Your Name" required="">                    
+                            <!-- <label for="email">Your Email</label> -->
+                            <input type="email" id="email" name="email" placeholder="Your Email" required="">                   
+                            <!-- <label for="message">Your Message</label> -->
+                            <textarea id="message" name="message" rows="3" placeholder="Your Message" required=""></textarea>                    
+                            <button type="submit" class="btn btn2">Submit</button>
+                            </fieldset>
+                        </form>
+                        <span id="msg"></span>                   
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Rudraraj <i class="fa-solid fa-heart" aria-hidden="true"></i></p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+</html>
