@@ -463,18 +463,22 @@ nav .fa-solid{
 @media only screen and (max-width: 600px){
     .header{
         background-image: none;
+        height: 50vh;
     }
     .header-text-container{
-        margin-top: 40%;
+        margin-top: 20%;
         font-size: 16px;
+        text-align: center;
     }
     .header-text h1{
         font-size: 30px;
     }
+    nav{
+        padding: 10px;
+    }
     nav .fa-solid{
         display: block;
         font-size: 25px;
-
     }
     nav ul{
         background: #d01616;
@@ -491,40 +495,80 @@ nav .fa-solid{
         display: block;
         margin: 25px;
     }
-    nav ul .fa-solid{
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
     .logo{
         width: 50px;
     }
     .sub-title{
-        font-size: 30px;
+        font-size: 26px;
+    }
+    .about{
+        padding: 5px;
     }
     .about-col-1, .about-col-2{
         flex-basis: 100%;
+        text-align: center;
     }
     .about-col-1{
-        margin-top: 50%;
-        margin-bottom: 30px;
-    }
+        display: none;
+    }   
     .about-col-2{
-        font-size: 14px;
+        font-size: 18px;
+    }
+    .about-col-2 h1{
+        margin-bottom: 10px;
     }
     .tab-links{
         font-size: 16px;
-        margin-right: 20px;
+        margin-right: 10px;
+    }
+    .tab-titles{
+        display: flex;
+        justify-content: center;
+    }
+    .tab-contents{
+        font-size: 16px;
+    }
+    .services h1{
+        margin-bottom: -20px;
+        display: flex;
+        justify-content: center;
+    }
+    .portfolio h1{
+        margin-bottom: -20px;
+        display: flex;
+        justify-content: center;
+    }
+    .portfolio img{
+        width: 250px;
+        height: 200px;
+    }
+    .work{
+        display: flex;
+        justify-content: center;
+    }
+    .services-list{
+        grid-template-columns: 1fr;
+    }
+    .work-list{
+        grid-template-columns: 1fr;
+    }
+    .contact{
+        padding: 5px;
     }
     .contact-left, .contact-right{
         flex-basis: 100%;
-    }
-    .contact-left{
         text-align: center;
     }
-    .copyright{
+    .contact-right form input, .contact-right form textarea{
+        width: 100%;
         font-size: 14px;
+    }
+    .btn{
+        padding: 12px 30px;
+        font-size: 14px;
+    }
+    .copyright{
+        font-size: 12px;
     }
 }
 #msg{
