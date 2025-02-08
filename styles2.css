@@ -1,0 +1,168 @@
+/* ======= GENERAL STYLING ======= */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #080808;
+    color: #fff;
+    text-align: center;
+}
+
+/* ======= HEADER STYLING ======= */
+header {
+    background: #d01616;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ======= SERVICE DETAILS STYLING (Original Content) ======= */
+.service-details {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #111;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    text-align: left;
+}
+
+/* Centering Technologies, Platforms, and Tech Stack */
+.service-details .tech-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.service-details .tech-section h2 {
+    text-align: center;
+    color: #d01616;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.service-details .tech-section ul {
+    display: inline-block;
+    text-align: left;
+    padding: 0;
+    list-style-type: none;
+}
+
+.service-details .tech-section ul li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* ======= "GET IN TOUCH" BUTTON ======= */
+.contact-btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: #d01616;
+    border: 2px solid #d01616;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #a40e0e;
+    border-color: #a40e0e;
+    transform: scale(1.05);
+}
+
+/* ======= CONTACT FORM STYLING ======= */
+.contact {
+    margin-top: 30px;
+    padding: 20px;
+    background: #111;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+/* Fieldset */
+fieldset {
+    border: 2px solid #262626;
+    border-radius: 6px;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Legend */
+legend {
+    font-weight: 600;
+    padding: 10px;
+    color: #a48888;
+    font-size: 20px;
+}
+
+/* Input & Textarea */
+form input, form textarea {
+    width: 90%;
+    border: 1px solid #444;
+    outline: none;
+    background: #262626;
+    padding: 12px;
+    margin: 8px 0;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: border 0.3s ease-in-out;
+}
+
+form input:focus, form textarea:focus {
+    border: 1px solid #d01616;
+}
+
+/* Submit Button */
+.btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #d01616;
+    border: 2px solid #d01616;
+    color: #fff;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    background: #a40e0e;
+    border-color: #a40e0e;
+    transform: scale(1.05);
+}
+
+/* Message Feedback */
+#msg {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: green;
+}
+
+/* Fade-in Animation for Form */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
