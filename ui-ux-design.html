@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Design | My Portfolio</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+    <header>
+        <h1>UI/UX Design</h1>
+    </header>
+
+    <section class="service-details">
+        <h2>What I Offer</h2>
+        <p>Designing intuitive, visually appealing, and user-friendly web experiences using Figma and Adobe XD.</p>
+        
+        <h2>Technologies & Tools</h2>
+        <ul>
+            <li>Figma</li>
+            <li>Adobe XD</li>
+            <li>Sketch</li>
+            <li>Wireframing & Prototyping</li>
+        </ul>
+
+        <h2>Why Choose Me?</h2>
+        <p>I focus on creating <strong>seamless and engaging</strong> user experiences that improve usability and conversions.</p>
+
+        <button id="show-contact-form" class="btn">Get in Touch</button>
+    </section>
+
+    <section class="contact" id="contact-form">
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <fieldset>
+                    <legend>Get in Touch</legend>                   
+                    <input type="text" name="name" placeholder="Your Name" required>                    
+                    <input type="email" name="email" placeholder="Your Email" required>                   
+                    <textarea name="message" rows="3" placeholder="Your Message" required></textarea>                    
+                    <button type="submit" class="btn2">Submit</button>
+                </fieldset>
+            </form>
+            <span id="msg"></span>                   
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const showContactBtn = document.getElementById("show-contact-form");
+            const contactForm = document.getElementById("contact-form");
+
+            if (showContactBtn && contactForm) {
+                showContactBtn.addEventListener("click", function() {
+                    contactForm.style.display = "block";
+                    showContactBtn.style.display = "none";
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
