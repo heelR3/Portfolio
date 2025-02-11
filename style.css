@@ -582,3 +582,77 @@ nav .fa-solid{
     text-align: center;
 }
 
+
+@media only screen and (max-width: 992px) {
+    .header {
+        height: 70vh; /* Slightly reduced height */
+        padding: 20px;
+    }
+    .header-text-container {
+        margin-top: 12%;
+        font-size: 28px; /* Slightly smaller */
+        text-align: center;
+    }
+    .header-text h1 {
+        font-size: 36px; /* Reduced */
+    }
+    .logo {
+        width: 8%;
+    }
+    .sub-title {
+        font-size: 32px; /* Reduced */
+        margin-bottom: 15px;
+    }
+    .about {
+        padding: 15px;
+        margin-top: 3.5rem;
+    }
+    .about-col-1 {
+        display: none;
+    }
+    .about-col-2 {
+        font-size: 17px; /* Slightly smaller */
+        padding: 10px;
+    }
+    .about-col-2 h1 {
+        font-size: 28px; /* Reduced */
+        margin-bottom: 8px;
+    }
+    .tab-links {
+        font-size: 15px; /* Reduced */
+        margin-right: 8px;
+        padding: 5px 10px;
+    }
+    .services-list,
+    .work-list {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .portfolio img {
+        width: 230px; /* Smaller images */
+        height: 180px;
+        margin: 10px;
+    }
+    .contact {
+        padding: 10px 5%;
+    }
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .contact-right form input,
+    .contact-right form textarea {
+        width: 90%;
+        font-size: 15px; /* Reduced */
+        padding: 8px;
+    }
+    .btn {
+        padding: 10px 25px; /* Adjusted */
+        font-size: 14px; /* Reduced */
+    }
+    .copyright {
+        font-size: 12px; /* Adjusted */
+        padding: 5px 0;
+    }
+}
