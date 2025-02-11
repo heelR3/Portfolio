@@ -263,6 +263,8 @@ nav ul li a:hover::after{
     margin-top: 50px;
 }
 .work{
+    border: 2px solid #262626;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     position: relative;
     overflow: hidden;
@@ -427,6 +429,7 @@ form .btn2{
 }
 fieldset{
     border: 2px solid #262626;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
     border-radius: 6px;
     padding: 10px;
     text-align: center;
