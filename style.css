@@ -656,3 +656,7 @@ nav .fa-solid{
         padding: 5px 0;
     }
 }
+
+#ems {
+    cursor: pointer;
+}
