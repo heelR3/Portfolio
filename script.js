@@ -79,6 +79,10 @@ async function fetchLeetCodeData(username) {
     }
 }
 
+const ems = document.getElementById("ems");
+ems.onclick = function(){
+    window.open("https://heelr3.github.io/ems/");
+}
 // Replace with your actual LeetCode username
 fetchLeetCodeData("heel_r3");
 setInterval(() => fetchLeetCodeData("heel_r3"), 60000); // Refreshes every 60 seconds
