@@ -83,6 +83,12 @@ const ems = document.getElementById("ems");
 ems.onclick = function(){
     window.open("https://heelr3.github.io/ems/");
 }
+
+const ai-interview-mocker = document.getElementById("ai-interview-mocker");
+ems.onclick = function(){
+    window.open("https://ai-interview-mocker-phi-teal.vercel.app/");
+}
+
 // Replace with your actual LeetCode username
 fetchLeetCodeData("heel_r3");
 setInterval(() => fetchLeetCodeData("heel_r3"), 60000); // Refreshes every 60 seconds
