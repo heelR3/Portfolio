@@ -79,22 +79,6 @@ async function fetchLeetCodeData(username) {
     }
 }
 
-const ems = document.getElementById("ems");
-ems.onclick = function(){
-    window.open("https://heelr3.github.io/ems/");
-}
-
-const aiInterviewMocker = document.getElementById("ai-interview-mocker");
-ai-interview-mocker.onclick = function(){
-    window.open("https://ai-interview-mocker-phi-teal.vercel.app/");
-}
-
-const personalPortfolio = document.getElementById("personal-portfolio");
-personal-portfolio.onclick = function(){
-    window.open("https://heelr3.github.io/Portfolio/");
-}
-
-
 // Replace with your actual LeetCode username
 fetchLeetCodeData("heel_r3");
 setInterval(() => fetchLeetCodeData("heel_r3"), 60000); // Refreshes every 60 seconds
