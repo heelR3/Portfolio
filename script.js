@@ -85,9 +85,15 @@ ems.onclick = function(){
 }
 
 const ai-interview-mocker = document.getElementById("ai-interview-mocker");
-ems.onclick = function(){
+ai-interview-mocker.onclick = function(){
     window.open("https://ai-interview-mocker-phi-teal.vercel.app/");
 }
+
+const personal-portfolio = document.getElementById("personal-portfolio");
+personal-portfolio.onclick = function(){
+    window.open("https://heelr3.github.io/Portfolio/");
+}
+
 
 // Replace with your actual LeetCode username
 fetchLeetCodeData("heel_r3");
