@@ -84,12 +84,12 @@ ems.onclick = function(){
     window.open("https://heelr3.github.io/ems/");
 }
 
-const ai-interview-mocker = document.getElementById("ai-interview-mocker");
+const aiInterviewMocker = document.getElementById("ai-interview-mocker");
 ai-interview-mocker.onclick = function(){
     window.open("https://ai-interview-mocker-phi-teal.vercel.app/");
 }
 
-const personal-portfolio = document.getElementById("personal-portfolio");
+const personalPortfolio = document.getElementById("personal-portfolio");
 personal-portfolio.onclick = function(){
     window.open("https://heelr3.github.io/Portfolio/");
 }
